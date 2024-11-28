@@ -14,3 +14,27 @@
 		<h1>Astro</h1>
 	</body>
 </html>
+
+<style is:global>
+	@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	list-style: none;
+}
+img{
+	max-width: 100%;
+	margin: 0 auto;
+}
+body,html{
+	scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat Variable', sans-serif;
+}
+</style>
