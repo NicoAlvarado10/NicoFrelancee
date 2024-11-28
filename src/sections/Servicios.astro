@@ -1,0 +1,42 @@
+---
+import ServicioCard from "../components/ServicioCard.astro";
+
+
+---
+<section class=" gradient-2 flex flex-col gap-3 py-20 h-screen">
+    <h2 class="text-white text-center text-5xl font-bold">Soluciones Digitales</h2>
+    <p class="text-white text-center w-2/4 m-auto text-xl">Servicios especializados transforman tu negocio impulsandolo al siguiente nivel.
+    </p>
+    <div class=" max-w-6xl m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-between mt-8">
+        <ServicioCard
+        title="Diseño Web"
+        gradient="absolute inset-0 bg-gradient-to-br from-violet-600/20 to-purple-400/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        gradientIcon="gradient mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-violet-500/20"
+        icon="ri-palette-line text-violet-500 text-2xl"
+        item1="Diseño UI/UX Personalizado"
+        item2="Interfaces Responsivas"
+        item3="Identidad Visual"
+        />
+        <ServicioCard
+        title="Desarrollo Web"
+        gradient="absolute inset-0 bg-gradient-to-br from-cyan-600/20 to-blue-400/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        gradientIcon="gradient mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-500/20"
+        icon="ri-code-line text-cyan-500 text-2xl"
+        item1="Landing Page"
+        item2="Sitios Corporativos"
+        item3="Blogs"
+        />
+        <ServicioCard
+        title="Optimización Web"
+        gradient="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-orange-400/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        gradientIcon="gradient mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-orange-500/20"
+        icon="ri-timer-flash-line text-orange-500 text-2xl"
+        item1="Optimización SEO"
+        item2="Rendimiento Web"
+        item3="Seguridad Web"
+        />
+       
+      </div>
+      <a class=" text-center max-w-max m-auto py-3 px-6 rounded-2xl bg-slate-300 transition duration-150 hover:bg-white font-semibold" href="#">Solicitar Presupuesto</a>
+      
+</section>

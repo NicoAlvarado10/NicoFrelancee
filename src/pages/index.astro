@@ -1,10 +1,11 @@
 ---
+import 'remixicon/fonts/remixicon.css';
 import Header from "../sections/Header.astro";
-
+import Servicios from "../sections/Servicios.astro"
 
 ---
 
-<html lang="es">
+<html lang="es" >
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -12,8 +13,11 @@ import Header from "../sections/Header.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body class="gradient">
+	<body >
 		<Header/>
+    <main>
+      <Servicios/>
+    </main>
 	</body>
 </html>
 
@@ -39,42 +43,42 @@ body,html{
 body {
   font-family: 'Montserrat Variable', sans-serif;
 }
-@keyframes hero-gradient-animation {
+@keyframes gradient-animation {
   0% {
-	  --y-0: 8%;
-	  --x-0: 83%;
-	  --s-start-0: 13.2209727561817%;
-	  --s-end-0: 57.79527252984263%;
-	  --c-0: hsla(344.8387096774194, 76%, 52%, 0.35);
-	  --x-1: 83%;
-	  --y-1: 77%;
-	  --s-start-1: 13.2209727561817%;
-	  --s-end-1: 57.79527252984263%;
-	  --c-1: hsla(277.50000000000006, 18%, 7%, 0);
-	  --c-2: hsla(221.5853522805607, 71%, 60%, 0.35);
-	  --y-2: 80%;
-	  --x-2: 16%;
-	  --s-start-2: 10.524512369218554%;
-	  --s-end-2: 41.41081577193815%;
-  }
+        --c-0: hsla(344.8387096774194, 76%, 52%, 0.35);
+        --s-start-0: 13.2209727561817%;
+        --s-end-0: 57.79527252984263%;
+        --x-0: 83%;
+        --y-0: 8%;
+        --y-1: 77%;
+        --s-start-1: 13.2209727561817%;
+        --s-end-1: 57.79527252984263%;
+        --c-1: hsla(277.50000000000006, 18%, 7%, 0);
+        --x-1: 83%;
+        --y-2: 80%;
+        --s-start-2: 10.524512369218554%;
+        --s-end-2: 41.41081577193815%;
+        --c-2: hsla(221.5853522805607, 71%, 60%, 0.35);
+        --x-2: 16%;
+    }
 
-  100% {
-	  --y-0: 81%;
-	  --x-0: 22%;
-	  --s-start-0: 8.7617747539524%;
-	  --s-end-0: 44.205465467741966%;
-	  --c-0: hsla(277.50000000000006, 18%, 7%, 0);
-	  --x-1: 5%;
-	  --y-1: 6%;
-	  --s-start-1: 8.7617747539524%;
-	  --s-end-1: 57.90247331543764%;
-	  --c-1: hsla(88.65168539325842, 71%, 47%, 0.34);
-	  --c-2: hsla(265.2847649069393, 68%, 71%, 0.25);
-	  --y-2: 88%;
-	  --x-2: 90%;
-	  --s-start-2: 7.1392183644121925%;
-	  --s-end-2: 37.47294723125771%;
-  }
+    100% {
+        --c-0: hsla(277.50000000000006, 18%, 7%, 0);
+        --s-start-0: 8.7617747539524%;
+        --s-end-0: 44.205465467741966%;
+        --x-0: 22%;
+        --y-0: 81%;
+        --y-1: 6%;
+        --s-start-1: 8.7617747539524%;
+        --s-end-1: 57.90247331543764%;
+        --c-1: hsla(89, 68%, 25%, 0.34);
+        --x-1: 5%;
+        --y-2: 88%;
+        --s-start-2: 7.1392183644121925%;
+        --s-end-2: 37.47294723125771%;
+        --c-2: hsla(265.2847649069393, 68%, 71%, 0.25);
+        --x-2: 90%;
+    }
 }
 
 @property --y-0 {
@@ -180,9 +184,66 @@ body {
   ;
   background-color: hsla(277.5, 20%, 7%, 1);
   background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2));
-  animation: hero-gradient-animation 5s linear infinite alternate;
+  animation: gradient-animation 5s linear infinite alternate;
   background-blend-mode: normal, normal, normal;
-  height: 100vh;
+  
+}
+
+@keyframes gradient-animation-2 {
+  0% {
+     
+        --c-0: hsla(277.50000000000006, 18%, 7%, 0);
+        --s-start-0: 8.7617747539524%;
+        --s-end-0: 44.205465467741966%;
+        --x-0: 22%;
+        --y-0: 81%;
+        --y-1: 6%;
+        --s-start-1: 8.7617747539524%;
+        --s-end-1: 57.90247331543764%;
+        --c-1: hsla(89, 68%, 25%, 0.34);
+        --x-1: 5%;
+        --y-2: 88%;
+        --s-start-2: 7.1392183644121925%;
+        --s-end-2: 37.47294723125771%;
+        --c-2: hsla(265.2847649069393, 68%, 71%, 0.25);
+        --x-2: 90%;
+    }
+
+    100% {
+      --c-0: hsla(344.8387096774194, 76%, 52%, 0.35);
+        --s-start-0: 13.2209727561817%;
+        --s-end-0: 57.79527252984263%;
+        --x-0: 83%;
+        --y-0: 8%;
+        --y-1: 77%;
+        --s-start-1: 13.2209727561817%;
+        --s-end-1: 57.79527252984263%;
+        --c-1: hsla(277.50000000000006, 18%, 7%, 0);
+        --x-1: 83%;
+        --y-2: 80%;
+        --s-start-2: 10.524512369218554%;
+        --s-end-2: 41.41081577193815%;
+        --c-2: hsla(221.5853522805607, 71%, 60%, 0.35);
+        --x-2: 16%;
+    }
+}
+
+.gradient-2 {
+  --y-0: 8%;
+  --x-0: 83%;
+  --c-0: hsla(344.8387096774194, 76%, 52%, 0.35);
+  --x-1: 83%;
+  --y-1: 77%;
+  --c-1: hsla(277.50000000000006, 18%, 7%, 0);
+  --c-2: hsla(221.5853522805607, 71%, 60%, 0.35);
+  --y-2: 80%;
+  --x-2: 16%;
+  background-color: hsla(277.5, 20%, 7%, 1);
+  background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), 
+                    radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), 
+                    radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2));
+  animation: gradient-animation-2 5s linear infinite alternate;
+  background-blend-mode: normal, normal, normal;
 }
 
 </style>
